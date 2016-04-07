@@ -71,6 +71,9 @@ body #breadcrumbs {
                 color: #606b71;
                 background: #000;
             }
+            &:hover{
+                background: darken(#606b71, 10%);
+            }
         }
     }
 }
