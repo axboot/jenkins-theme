@@ -62,26 +62,17 @@ a {
 body #breadcrumbs {
     background: #606b71 !important;
     color: #fff;
-}
-
-body #breadcrumbs li,
-body #breadcrumbs li a,
-body #breadcrumbs li a:link,
-body #breadcrumbs li a:visited {
-    color: #fff;
-}
-
-body #breadcrumbs li:hover a,
-body #breadcrumbs li:hover a:link,
-body #breadcrumbs li:hover a:visited,
-body #breadcrumbs li a.mouseIsOverMenuSelector {
-    color: #606b71;
-}
-
-body #breadcrumbs li,
-body #breadcrumbs li a,
-body #breadcrumbs li a:hover {
-    background: #000;
+    li{
+        a{
+            &:link, &:visited{
+                color: #fff;
+            }
+            &.mouseIsOverMenuSelector {
+                color: #606b71;
+                background: #000;
+            }
+        }
+    }
 }
 
 #right-top-nav a {
