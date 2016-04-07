@@ -78,6 +78,12 @@ body #breadcrumbs li a.mouseIsOverMenuSelector {
     color: #606b71;
 }
 
+body #breadcrumbs li,
+body #breadcrumbs li a,
+body #breadcrumbs li a:hover {
+    background: #000;
+}
+
 #right-top-nav a {
     color: #fff !important;
 }
