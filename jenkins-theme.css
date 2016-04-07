@@ -1,0 +1,279 @@
+/* 
+===============================================================
+    Jenkins Theme for AOE GmbH
+    Built for Jenkins Version 1.615
+===============================================================
+*/
+
+body {
+    font-family: Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-size: 13px !important;
+    line-height: 20px !important;
+}
+
+a:link,
+a:visited {
+    color: #7B8B93;
+}
+
+/* 
+---------------------------------------------------------------
+    Header
+---------------------------------------------------------------
+*/
+
+#header {
+    height: 42px;
+    background-color: #475157;
+}
+
+#header .logo {
+    margin-left: 10px;
+}
+
+#jenkins-home-link {
+    height: 42px;
+}
+
+#jenkins-home-link:before {
+    content: '';
+    width: 83px;
+    height: 30px;
+    margin-top: 8px;
+    display: inline-block;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFMAAAAeCAYAAABQdCKyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3FpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpiODRmYmZkMy03NDNiLWQzNDAtYTZjYS03NTI1ZDdkM2I0YTgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NEU4RTMzMDdCOTY1MTFFM0E1NURCRDgyNjRFMkFBMkYiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NEU4RTMzMDZCOTY1MTFFM0E1NURCRDgyNjRFMkFBMkYiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOmNiZDIyZDE2LTNmNDEtMWY0NS1iYzkyLWY2MjEyMTljYjNiZCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpiODRmYmZkMy03NDNiLWQzNDAtYTZjYS03NTI1ZDdkM2I0YTgiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7jrfHYAAAEMklEQVR42uyZa0gVQRTH703LSntoVhI9RCl7iPb4UkQhQoRhWUh9ECqLkAoVJQqqLxUUZBCR1IeMjAx7QVb0gijKIBDLIHr56iGhRhaZmmbm7X9whOmwe2fGvX3x3gM/ZnfnzOzu2Tlzzsy6PR6PKyA+EjKmNwz6GQkywRPwC5SCJOD2F/s5NiZ05oBC8N1jLdUgD0QEjGndwXCwHjz26EsXKAFLAsbsazgbHAPfPM7kJcgBY/3KmCAEZICHGka6D9JAFNgB3iv0f4KzYOFgMKZbY15sBhO91HeA86DQ7Xa/YjcagmIlyAXJivucQPtsjYfPQRErXSpHu6uKNovEc8wAo0ErqAbX0baS6Y5BsV/XliBfO5qDZptRVQ/yxc11vmA8OCVGo5UUavQxAfxm7T6Ij2aXYVxTeAdlHcOkNtGGU5aRm/MgUwdS7V5AwyARYBdoZ/3marTNs3mhZBv9Yk2DHPeFMXXcvBhksqF9DuyBizQ6mGuqUMyTLqWgv7uKNs9RzLWoKkHbDUw3BkW9dKmX3Bo0gGiQJtX9AVPQRxPaReL4tMGrrDZx8702X4RG1m5KkwZozBbWX6xCP4Hpy9NPBxjF9POZ/kFWf5TVZzkNQMEa+jU210PBIZBFbouvesVktYRinHSpB3xUNJNHXhfYCsrEOfW3FpyRdBJZ+9vs/M4/wcPlShDPNhTFYoMA9MhkZCZqzh3lYL6mMWeytrUK/SA2Ei+Ka5/l+7M2N9g94hQj/YLTOVMniNRpfiVa2TxFp0UaEX6a5ujvl+UsPSuFJ9A8d1m+P5sqQlkfXey8nZ2PcJpzKo2Jh6Y8UjfQ0KbGFrBKoTfV8INtZOdxFNktDCbrtbG6MHbO9wrapEA1IAnW1KOXnWTQb5CvjCmWnGnscoHdvAr9fRgAvRZzMN1TXlRMZvVNYvA0iEGhHYC0R6ahq+sKN6a3OXMdCNHsl6aPJHFcweqy+5NzUW5j9VVOX0p3ZNb+Z2NWe9HlOe4LVk8pUQzTfyByyh9i+UiygpbGMGSDuH84c/GbwtDkga8Nonm40eYwynTDCJepWFa2SrrdFJltdKfzjMFCJxL8sco5UW7WfN7tvlgB6bp5jdOhSDvu4qErpdFC8k5EZlVuSXLLIkC2MJemnDNd1FHeuUls1ljJV3J/6J30hbvpuvlb8AwsGKAhI8WyNNVqKeilabkwhl3i3S+0ro+3mjZgKNriK8UhbfPNEilQp9CpQH2nxS7ZGsf7cd42h8XuepGpm+N4GWi0WY5m+PVvC/HTrFNlTIqY4IhN/Rv6dxT4B9TXQaLYirOTAtoVsqm7BML8/h8Q35EGZQZRr1tnz9IvjSlF6J2gR2HIT+LXgStgTHWHS0GTjSHvgfGuQSo+N6boNIr9wewFB+wS8oAx1R3THuNh8AWkuPxATP8BBURT/gowAMf9KPOqHRzRAAAAAElFTkSuQmCC');
+    background-repeat: no-repeat;
+}
+
+#jenkins-head-icon {
+    left: 95px;
+}
+
+#jenkins-name-icon {
+    display: none;
+}
+
+
+/* 
+---------------------------------------------------------------
+    Search Field
+---------------------------------------------------------------
+*/
+
+#header .searchbox {
+    padding-top: 9px;
+}
+
+#search-box {
+    border-radius: 12px;
+    background-image: none;
+    padding-left: 12px;
+}
+
+
+/* 
+---------------------------------------------------------------
+    Breadcrumb
+---------------------------------------------------------------
+*/
+
+body #breadcrumbs {
+    background: #606b71 !important;
+    color: #fff;
+}
+
+body #breadcrumbs li,
+body #breadcrumbs li a,
+body #breadcrumbs li a:link,
+body #breadcrumbs li a:visited {
+    color: #fff;
+}
+
+body #breadcrumbs li:hover a,
+body #breadcrumbs li:hover a:link,
+body #breadcrumbs li:hover a:visited,
+body #breadcrumbs li a.mouseIsOverMenuSelector {
+    color: #606b71;
+}
+
+#right-top-nav a {
+    color: #fff !important;
+}
+
+/* 
+---------------------------------------------------------------
+    Panes, Sidebar
+---------------------------------------------------------------
+*/
+
+.pane-frame {
+    border: 1px solid #e3e7e9;
+    border-color: #e3e7e9 #b7c3cb #b7c3cb #e3e7e9;
+}
+
+.pane-header {
+    background-color: #EFF3F6;
+}
+
+/* 
+---------------------------------------------------------------
+    Status Icons
+---------------------------------------------------------------
+*/
+
+#projectstatus tr[class*="job-status"] td:first-child img {
+    display: none;
+}
+
+#projectstatus tr[class*="job-status"] td:first-child {
+    width: 40px;
+}
+
+#projectstatus tr[class*="job-status"] td:first-child:before {
+    content: '';
+    width: 26px;
+    height: 26px;
+    display: block;
+    border-radius: 50%;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+#projectstatus tr[class*="-anime"] td:first-child:before {
+    animation: in-progress-animation 1.3s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes in-progress-animation {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+/* Green */
+#projectstatus tr td[data="4"]:before,
+#projectstatus tr.job-status-blue td:first-child:before,
+#projectstatus tr.job-status-blue-anime td:first-child:before {
+    background: #397439;
+    background-image: -moz-radial-gradient(3px 3px 45deg, circle cover, #72d472 0%, #397439 100%);
+    background-image: -webkit-radial-gradient(3px 3px, circle cover, #72d472, #397439);
+    background-image: radial-gradient(circle at 3px 3px, #72d472 0%, #397439 100%);
+}
+
+/* Red */
+#projectstatus tr td[data="0"]:before,
+#projectstatus tr.job-status-red td:first-child:before,
+#projectstatus tr.job-status-red-anime td:first-child:before {
+    background: #ac2925;
+    background-image: -moz-radial-gradient(3px 3px 45deg, circle cover, #d9534f 0%, #ac2925 100%);
+    background-image: -webkit-radial-gradient(3px 3px, circle cover, #d9534f, #ac2925);
+    background-image: radial-gradient(circle at 3px 3px, #d9534f 0%, #ac2925 100%);
+}
+
+/* Yellow */
+#projectstatus tr td[data="2"]:before,
+#projectstatus tr.job-status-yellow td:first-child:before,
+#projectstatus tr.job-status-yellow-anime td:first-child:before {
+    background: #f0ad4e;
+    background-image: -moz-radial-gradient(3px 3px 45deg, circle cover, #f0ad4e 0%, #d58512 100%);
+    background-image: -webkit-radial-gradient(3px 3px, circle cover, #f0ad4e, #d58512);
+    background-image: radial-gradient(circle at 3px 3px, #f0ad4e 0%, #d58512 100%);
+}
+
+/* Gray */
+#projectstatus tr.job-status-disabled td:first-child:before,
+#projectstatus tr.job-status-aborted td:first-child:before,
+#projectstatus tr.job-status-nobuilt td:first-child:before,
+#projectstatus tr.job-status-disabled-anime td:first-child:before,
+#projectstatus tr.job-status-aborted-anime td:first-child:before,
+#projectstatus tr.job-status-nobuilt-anime td:first-child:before {
+    background: #999;
+    background-image: -moz-radial-gradient(3px 3px 45deg, circle cover, #ccc 0%, #999 100%);
+    background-image: -webkit-radial-gradient(3px 3px, circle cover, #ccc, #999);
+    background-image: radial-gradient(circle at 3px 3px, #ccc 0%, #999 100%);
+}
+
+/* 
+---------------------------------------------------------------
+    Progress Bar
+---------------------------------------------------------------
+*/
+
+table.progress-bar {
+    border: 1px solid #606b71;
+}
+
+td.progress-bar-done {
+    background-color: #606b71;
+}
+
+/* 
+---------------------------------------------------------------
+    Tables
+---------------------------------------------------------------
+*/
+
+.bigtable th {
+    background-color: #EFF3F6;
+}
+
+/* 
+---------------------------------------------------------------
+    Tabs
+---------------------------------------------------------------
+*/
+
+.tabBar [type=radio]:checked ~ a {
+    background-color: #EFF3F6;
+}
+
+/* 
+---------------------------------------------------------------
+    Buttons
+---------------------------------------------------------------
+*/
+
+#jenkins .yui-button button {
+    background-color: #E2E9ED;
+    color: #606B72;
+    padding: 6px 18px;
+    font-size: 14px;
+    border: 0 !important;
+    transition: background-color 100ms linear;
+}
+
+#jenkins .yui-button button:hover,
+#jenkins .yui-button button:active {
+    background-color: #c3d1d9;
+    box-shadow: none;
+}
+
+#jenkins .yui-button.primary button {
+    background-color: #F79223;
+    color: #fff;
+}
+
+#jenkins .yui-button.primary button:hover,
+#jenkins .yui-button.primary button:active {
+    background-color: #df7908;
+    box-shadow: none;
+}
+
+/* 
+---------------------------------------------------------------
+    Footer
+---------------------------------------------------------------
+*/
+
+footer,
+#footer-container {
+    background-color: #EFF3F6;
+}
