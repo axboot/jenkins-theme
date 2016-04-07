@@ -1,3 +1,7 @@
+![axboot-plugins](https://img.shields.io/badge/Plugins-AXBOOT-red.svg)
+[![axisj-contributed](https://img.shields.io/badge/AXISJ.com-Contributed-green.svg)](https://github.com/axisj)
+
+
 # AXBOOT Theme for Jenkins CI
 
 ## Usage
