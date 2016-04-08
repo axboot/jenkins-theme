@@ -252,6 +252,29 @@ body {
         box-shadow: none;
     }
 
+
+    .healthReport{
+        &:hover, &.hover{
+            div.healthReportDetails{
+                padding:2px;
+                border-radius: 5px;
+                table{
+                    thead{
+                        th{
+                            text-align: center;
+                        }
+                    }
+                    tbody{
+                        td{
+                            padding-left:5px;
+                            padding-right:5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     /*
     ---------------------------------------------------------------
         Footer
