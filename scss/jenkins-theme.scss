@@ -255,16 +255,13 @@ body {
 
     .healthReport{
         &:hover, &.hover{
-            #projectstatus th{
-                text-align: center;
-            }
             div.healthReportDetails{
                 padding:2px;
                 border-radius: 5px;
                 table{
                     thead{
                         th{
-                            text-align: center;
+                            text-align: center !important;
                         }
                     }
                     tbody{
